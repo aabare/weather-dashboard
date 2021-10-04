@@ -4,10 +4,8 @@ Introduction
 
 The Weather Dashboard was created for Challenge 6 and includes JavaScript, HTML, Bootstrap, Third Party APIs and Server-side APIs files. The Weather Dashboard allows the user to search a particular city. It will give the temperature, humidity, wind speeds and uv index and a five day forecast. 
 
-<<<<<<< HEAD
-=======
 ![Capture](https://user-images.githubusercontent.com/88077451/135784875-49550d01-4ecc-4ee2-9083-d0766c66079e.PNG)
->>>>>>> 46662efef424e850e59e54f30cf6146b72a04d8d
+
 
 Usage 
 
