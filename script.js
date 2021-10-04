@@ -10,13 +10,14 @@ $("#searchValue").keypress(function(event) {
 	} 
 });
 
+//City search
 $("#searchBtn").on("click", function() {
 
   $('#forecastDay').addClass('show');
 
-  city = $("#searchValue").val(); //user inputs city name
+  city = $("#searchValue").val();
   
-  $("#searchValue").val(""); //clear input
+  $("#searchValue").val(""); 
 
   let queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + apiKey;
 
@@ -48,6 +49,7 @@ $("#searchBtn").on("click", function() {
 
     $('#selectedCity').empty();
 
+    //Styling 
     let card = $("<div>").addClass("card");
     let cardBody = $("<div>").addClass("card-body");
     let city = $("<h4>").addClass("card-title").text(response.name);
@@ -62,6 +64,8 @@ $("#searchBtn").on("click", function() {
           url: uvURL,
           method: "GET"
       })
+
+      //UV Colors
       .then(function (uvresponse) {
           var uvIndex = uvresponse.value;
           var bgColor;
@@ -69,7 +73,7 @@ $("#searchBtn").on("click", function() {
               bgColor = "green";
           }
           else if ((uvIndex >=4) && (uvIndex <= 8)) {
-              bgColor = "yellow";
+              bgColor = "orange";
           }
          
           else 
@@ -85,7 +89,7 @@ $("#searchBtn").on("click", function() {
     card.append(cardBody);
     $("#selectedCity").append(card)
   }
-
+//Current Forecast API
 function getCurrentForecast () {
   
   $.ajax({
