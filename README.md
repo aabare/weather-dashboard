@@ -14,4 +14,4 @@ Once on the Weather Dashboard the user searches a specific city. For example, if
 Authors and Acknowledgements
 
 This code was prepared for Challenge 6 for Rutgers University Bootcamp by Adam Abare.
-
+https://aabare.github.io/weather-dashboard/
