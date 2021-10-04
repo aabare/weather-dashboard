@@ -1,4 +1,4 @@
-var city = $("#searchvalue").val();
+var city = $("#searchValue").val();
 let apiKey = "&appid=85c8916b3b56ebd5ed290d4b8a6bc531";
 
 var date = new Date();
@@ -43,6 +43,7 @@ $("#searchBtn").on("click", function() {
   }
 
   function getCurrentConditions (response) {
+
     //Temperature conversion
     var tempF = (response.main.temp - 273.15) * 1.80 + 32;
     tempF = Math.floor(tempF);
@@ -89,6 +90,7 @@ $("#searchBtn").on("click", function() {
     card.append(cardBody);
     $("#selectedCity").append(card)
   }
+
 //Current Forecast API
 function getCurrentForecast () {
   
